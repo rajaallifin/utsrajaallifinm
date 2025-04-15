@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:scrollbars="vertical">
+
+    <!-- Nama Surah -->
+    <TextView
+        android:id="@+id/tvSurahName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Surah Name"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Terjemahan Nama Surah -->
+    <TextView
+        android:id="@+id/tvSurahTranslation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Translation"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Jenis Wahyu -->
+    <TextView
+        android:id="@+id/tvRevelationType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Revelation Type"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Jumlah Ayat -->
+    <TextView
+        android:id="@+id/tvNumberOfAyahs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Number of Ayahs"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Menampilkan Ayat -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <TextView
+            android:id="@+id/tvAyahList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loading Ayahs..."
+            android:padding="16dp"
+            android:scrollbars="vertical" />
+    </ScrollView>
+
+</LinearLayout>
