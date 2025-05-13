@@ -44,18 +44,11 @@
         android:layout_marginBottom="16dp" />
 
     <!-- Menampilkan Ayat -->
-    <ScrollView
+    <TextView
+        android:id="@+id/tvAyahList"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fillViewport="true">
-
-        <TextView
-            android:id="@+id/tvAyahList"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Loading Ayahs..."
-            android:padding="16dp"
-            android:scrollbars="vertical" />
-    </ScrollView>
+        android:text="Loading Ayahs..."
+        android:padding="16dp"/>
 
 </LinearLayout>

@@ -14,7 +14,4 @@ interface QuranApiService {
 
     @GET("surah/{number}")  // Sudah ada untuk mendapatkan ayat dari surah
     fun getAyahsForSurah(@Path("number") number: Int): Call<AyahResponse>
-
-    @GET("surah/{number}/id.indonesian")
-    fun getTranslationAyahs(@Path("number") number: Int): Call<AyahResponse>
 }

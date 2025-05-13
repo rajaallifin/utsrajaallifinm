@@ -1,5 +1,4 @@
 package com.example.alquran
-import android.content.Intent
 import retrofit2.Callback
 import retrofit2.Response
 import retrofit2.Call
@@ -45,9 +44,8 @@ class MainActivity : AppCompatActivity() {
                     // Update UI di main thread
                     runOnUiThread {
                         surahAdapter = SurahAdapter(surahList) { surah ->
-                            val intent = Intent(this@MainActivity, DetailSurahActivity::class.java)
-                            intent.putExtra("surah_key", surah)
-                            startActivity(intent)
+                            Toast.makeText(this@MainActivity, "Klik: ${surah.englishName}", Toast.LENGTH_SHORT).show()
+                            // Navigasi ke DetailSurahActivity atau sesuatu yang lain
                         }
                         recyclerView.adapter = surahAdapter
                     }

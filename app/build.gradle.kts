@@ -7,12 +7,12 @@ plugins {
 
 android {
     namespace = "com.example.alquran"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.alquran"
-        minSdk = 33
-        targetSdk = 34
+        minSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
